@@ -2,165 +2,21 @@
 title: Welcome to Pepeground
 ---
 
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
-
 <!-- Header -->
-<header>
-  <div class="container" id="maincontent" tabindex="-1">
-    <div class="row">
-      <div class="col-lg-12">
-        <%= image_tag 'profile.jpg', class: 'img-responsive', alt: '' %>
-        <div class="intro-text">
-          <h1 class="name">Pepeground</h1>
-          <hr class="star-light">
-          <span class="skills">Pepe the frog</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<%= partial 'layouts/_intro' %>
 
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
-  <div class="container">
-    <div class='row'>
-      <div class="col-lg-12 text-center">
-        <h2>Pridorskie quotes</h2>
-        <hr class="star-primary">
-      </div>
-      <div class='col-md-offset-2 col-md-8'>
-        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-          <!-- Bottom Carousel Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#quote-carousel" data-slide-to="1"></li>
-            <li data-target="#quote-carousel" data-slide-to="2"></li>
-            <li data-target="#quote-carousel" data-slide-to="3"></li>
-          </ol>
+<!-- Quotes Section -->
+<%= partial 'layouts/_quotes' %>
 
-          <!-- Carousel Slides / Quotes -->
-          <div class="carousel-inner">
+<!-- Pepeground bot Section -->
+<%= partial 'layouts/_pepeground_bot' %>
 
-            <!-- Quote 1 -->
-            <div class="item active">
-              <blockquote>
-                <div class="row">
-                  <div class="col-sm-3 text-center">
-                    <%= image_tag 'bot.jpg', class: 'img-circle', style: 'width: 100px;height:100px;' %>
-                  </div>
-                  <div class="col-sm-9">
-                    <p>Однажды один очень мудрый человек сказал: ты пидор. Помню на одного наткнулись в музее компьютерных игр, работает там.</p>
-                    <small>PepegroundBot</small>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-            <!-- Quote 2 -->
-            <div class="item">
-              <blockquote>
-                <div class="row">
-                  <div class="col-sm-3 text-center">
-                    <%= image_tag 'bot.jpg', class: 'img-circle', style: 'width: 100px;height:100px;' %>
-                  </div>
-                  <div class="col-sm-9">
-                    <p>пиздец ты такая мразь зачем ты меня расстроил? с другой стороны тоже не знаю что происходит.</p>
-                    <small>PepegroundBot</small>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-            <!-- Quote 3 -->
-            <div class="item">
-              <blockquote>
-                <div class="row">
-                  <div class="col-sm-3 text-center">
-                    <%= image_tag 'bot.jpg', class: 'img-circle', style: 'width: 100px;height:100px;' %>
-                  </div>
-                  <div class="col-sm-9">
-                    <p>Мразота ты неграмотная.</p>
-                    <small>PepegroundBot</small>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-            <div class="item">
-              <blockquote>
-                <div class="row">
-                  <div class="col-sm-3 text-center">
-                    <%= image_tag 'bot.jpg', class: 'img-circle', style: 'width: 100px;height:100px;' %>
-                  </div>
-                  <div class="col-sm-9">
-                    <p>Кот борис соснул пипис?</p>
-                    <small>PepegroundBot</small>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-          </div>
+<!-- Footer -->
+<%= partial 'layouts/_footer' %>
 
-          <!-- Carousel Buttons Next/Prev -->
-          <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-          <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="success" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>Pepeground BOT</h2>
-          <hr class="star-light">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-lg-offset-2">
-          <p>A simple bot that you can train, and it will be improvising to answer you.</p>
-        </div>
-        <div class="col-lg-4">
-          <p>It will take 10 minutes before the bot starts using the new quotes.</p>
-        </div>
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-          <a href="https://telegram.me/pepegroundBot" class="btn btn-lg btn-outline">
-            <i class="fa fa-telegram"></i> Bot in telegram
-          </a>
-          <a href="https://github.com/pepeground/pepeground-bot" class="btn btn-lg btn-outline">
-            <i class="fa fa-github"></i> GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="footer-above">
-      <div class="container">
-        <div class="footer-col">
-          <ul class="list-inline">
-            <li>
-              <a href="https://github.com/pepeground" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-github"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-below">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Copyright &copy; Pepe the frog <%= Date.today.year %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
